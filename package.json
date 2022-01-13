@@ -1,0 +1,22 @@
+{
+  "name": "supagrations",
+  "version": "1.0.0",
+  "description": "A node-pg-migrate boilerplate for supabase",
+  "main": "index.js",
+  "repository": "git@github.com:TimNEverett/supagrations.git",
+  "author": "Tim Everett <tim.neil.everett@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-pg-migrate": "^6.2.1",
+    "pg": "^8.7.1"
+  },
+  "scripts": {
+    "sg:create": "node-pg-migrate create",
+    "sg:up": "node-pg-migrate up -f=config.json",
+    "sg:down": "node-pg-migrate down -f=config.json",
+    "sg:redo": "node-pg-migrate redo -f=config.json",
+    "sg:downall": "node-pg-migrate down 999 -f=config.json"
+  }
+}
