@@ -17,6 +17,10 @@
     "sg:up": "node-pg-migrate up -f=config.json",
     "sg:down": "node-pg-migrate down -f=config.json",
     "sg:redo": "node-pg-migrate redo -f=config.json",
-    "sg:downall": "node-pg-migrate down 999 -f=config.json"
+    "sg:downall": "node-pg-migrate down 999 -f=config.json",
+    "sg:deploy:staging": "node-pg-migrate up -f=config.json --envPath=.env.staging",
+    "sg:deploy:prod": "node-pg-migrate up -f=config.json --envPath=.env.prod",
+    "sg:down:staging": "node-pg-migrate down -f=config.json --envPath=.env.staging",
+    "sg:down:prod": "node-pg-migrate down -f=config.json --envPath=.env.staging"
   }
 }

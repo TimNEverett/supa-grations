@@ -29,3 +29,7 @@ Commands to be run from project root like so:
 | sg:down {N} | rollback latest migration; optional int to rollback last N migrations |
 | sg:redo {N} | redo latest migration; optional int to redo last N migrations |
 | sg:downall | rollback all migrations |
+| sg:deploy:staging | apply all migrations using .env.staging |
+| sg:deploy:prod | apply all migrations using .env.prod |
+| sg:down:staging {N} | rollback N (default 1) migrations using .env.staging, |
+| sg:down:prod {N} | rollback N (default 1) migrations using .env.prod |
