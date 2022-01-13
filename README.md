@@ -5,16 +5,24 @@ node-pg-migrate boilerplate app for supabase
 ## Getting Started
 #### Setup the project
 1. Create a project directory and cd into it:
-`mkdir supabaseDBApp && cd supabaseDBApp`
+```bash
+  mkdir supabaseDBApp && cd supabaseDBApp
+```
 2. install dependencies:
-`yarn install`
+```bash
+yarn install
+```
 3. create a file called .env and copy the contents of example.env into it.
 4. Copy the database connection string from the supabase console and update the DATABASE_URL in the .env file.
-`DATABASE_URL=[paste your connection string here]`
+```
+DATABASE_URL=[paste your connection string here]
+```
 
 #### commands
 Commands to be run from project root like so:
-`yarn [command] [args]`
+```bash
+yarn [command] [args]
+```
 | command | description |
 |---------|-------------|
 | sg:create [migration-name] | create a new migration file in the migrations directory |
