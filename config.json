@@ -1,0 +1,5 @@
+{
+    "migrations-schema": "supagrations",
+    "create-migrations-schema": true,
+    "migrations-table": "migrations"
+}
